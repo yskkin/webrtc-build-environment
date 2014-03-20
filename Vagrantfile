@@ -86,6 +86,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.cookbooks_path = %w(cookbooks site-cookbooks)
     chef.roles_path = "roles"
     chef.data_bags_path = "data_bags"
+    chef.json = JSON.load((Pathname(__FILE__) + "../nodes/node.json").open)
   #   chef.add_recipe "mysql"
   #   chef.add_role "web"
   #
