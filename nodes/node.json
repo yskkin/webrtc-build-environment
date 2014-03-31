@@ -1,7 +1,8 @@
 {
     "run_list" : [
         "recipe[scm]",
-        "recipe[java]"
+        "recipe[java]",
+        "recipe[webrtc]"
     ],
 
     "java" : {
