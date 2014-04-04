@@ -41,7 +41,7 @@ vagrant up --provision
 vagrant ssh
 # 以下VM内で
 cd webrtc/trunk
-ninja -C out/Release AppDemoRTC
+ninja -C out/Release AppRTCDemo
 ```
 
 `webrtc/trunk/out/Release` 下に生成される成果物
